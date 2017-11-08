@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import './index.css'
@@ -8,7 +7,7 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Edmonton Vietnamese Alliance Church - English Ministries"
+      title='Edmonton Vietnamese Alliance Church - English Ministries'
       // meta={[
       //   { name: 'description', content: '' },
       //   { name: 'keywords', content: '' },
@@ -19,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
+        paddingTop: 0
       }}
     >
       {children()}
@@ -28,7 +27,7 @@ const TemplateWrapper = ({ children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper

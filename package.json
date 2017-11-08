@@ -16,10 +16,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "standard",
+    "fixcode": "standard --fix",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "standard": "^10.0.3"
   }
 }
