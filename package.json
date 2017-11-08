@@ -6,23 +6,38 @@
   "dependencies": {
     "gatsby": "^1.9.99",
     "gatsby-link": "^1.6.24",
-    "gatsby-plugin-react-helmet": "^1.0.8"
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "react": "^16.0.0",
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "./.cache"
+    ]
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "standard",
     "fixcode": "standard --fix",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "npm run lint"
+    "lint": "standard",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll",
+    "test": "npm run lint && jest"
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^21.2.1",
     "prettier": "^1.7.4",
+    "react-test-renderer": "^16.0.0",
+    "regenerator-runtime": "^0.11.0",
     "standard": "^10.0.3"
   }
 }
