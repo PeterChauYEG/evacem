@@ -6,6 +6,7 @@ import Hero from '../hero'
 
 it('renders correctly', () => {
   const tree = renderer.create(
-    <hero />
+    <Hero />
   )
+  expect(tree).toMatchSnapshot()
 })

@@ -8,4 +8,5 @@ it('renders correctly', () => {
   const tree = renderer.create(
     <FourZeroFourPage />
   )
+  expect(tree).toMatchSnapshot()
 })
