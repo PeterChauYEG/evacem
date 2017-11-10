@@ -2,7 +2,7 @@
 This is the website for the Edmonton Vietnamese Alliance Church, English Ministries.
 
 ## Development
-`gatsby develop`
+Start the development server: `npm run develop`
 
 ## Testing
 Run the linter and the test runner with: `npm run test`
