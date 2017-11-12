@@ -70,7 +70,7 @@ jobs:
         - run: yarn run build
 
         # deploy the build
-        - run: surge ./build
+        - run: yarn run deploy
 
 workflows:
   version: 2
