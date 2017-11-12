@@ -18,7 +18,7 @@
   "scripts": {
     "build": "react-scripts build",
     "ci:validate": "circleci config validate -c .circleci/config.yml",
-    "deploy": "./node_modules/.bin/surge --project ./build",
+    "deploy": "./node_modules/.bin/surge --project ./build --domain evacem.com",
     "eject": "react-scripts eject",
     "fixcode": "standard --fix",
     "lint": "standard",
