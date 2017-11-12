@@ -4,7 +4,39 @@
 #
 version: 2
 jobs:
-  - build-job:
+  build-job:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: yarn test
+
+  deploy-job:
       docker:
         # specify the version you desire here
         - image: circleci/node:7.10
@@ -27,39 +59,6 @@ jobs:
             - v1-dependencies-
 
         - run: yarn install
-
-        - save_cache:
-            paths:
-              - node_modules
-            key: v1-dependencies-{{ checksum "package.json" }}
-
-        # run tests!
-        - run: yarn test
-
-  - deploy-job:
-      docker:
-        # specify the version you desire here
-        - image: circleci/node:7.10
-
-        # Specify service dependencies here if necessary
-        # CircleCI maintains a library of pre-built images
-        # documented at https://circleci.com/docs/2.0/circleci-images/
-        # - image: circleci/mongo:3.4.4
-
-      working_directory: ~/repo
-
-      steps:
-        - checkout
-
-        # Download and cache dependencies
-        - restore_cache:
-            keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
-        - run: yarn install
-        - run: yarn global add now
 
         - save_cache:
             paths:
@@ -69,26 +68,20 @@ jobs:
         # build the web app
         - run: yarn run build
 
-        - run: cd build
-
         # deploy the build
-        - run: cd build
-        - run: now -t ${NOW_TOKEN}
-        - run: now -t ${NOW_TOKEN} alias production
+        - run: surge ./build
 
 workflows:
   version: 2
-  build-deploy:
+  build:
     jobs:
-      - build-job:
-          filters:
-            branches:
-              only:
-                - master
-                - dev
+      - build-job
+  deploy:
+    filter:
+      branches:
+        only:
+          - master
+    jobs:
       - deploy-job:
         requires:
           - build-job
-        filters:
-          branches:
-            only: master
