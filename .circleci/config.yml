@@ -73,10 +73,7 @@ jobs:
 
 workflows:
   version: 2
-  build:
-    jobs:
-      - build-job
-  deploy:
+  production:
     jobs:
       - build-job
       - deploy-job:
