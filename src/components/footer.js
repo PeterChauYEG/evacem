@@ -6,9 +6,9 @@ import '../index.css'
 const Footer = () => (
   <div className='footer-container'>
     <div className='footer-content'>
-      <p>7302 118 Street NW</p>
-      <p>Edmonton, AB</p>
-      <p>T6G 1S4</p>
+      <p className='footer-text'>7302 118 Street NW</p>
+      <p className='footer-text'>Edmonton, AB</p>
+      <p className='footer-text'>T6G 1S4</p>
     </div>
   </div>
 )
