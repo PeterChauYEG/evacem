@@ -16,7 +16,7 @@ class Map extends Component {
       lng: -113.535068
     }
     const type = 'hybrid'
-    const zoom = 15
+    const zoom = 14
 
     return (
       <GoogleMapReact
