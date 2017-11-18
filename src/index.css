@@ -80,6 +80,49 @@ p {
   justify-content: space-between;
 }
 
+.contact {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.contact-content {
+  background-color: #545454; /* text color (5) */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 8px;
+}
+
+.contact-address {
+  color: #E4E4E4;  /* text color (3) */
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.contact-emails-container {
+}
+
+.contact-email {
+  color: #E4E4E4;  /* text color (3) */
+  margin: 0;
+  text-decoration: underline;
+}
+
+.contact-name {
+  color: #E4E4E4;  /* text color (3) */
+  font-size: 1.05em;
+}
+
+.contact-map {
+  height: 350px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
 .footer-container {
   background-color: #545454; /* text color (5) */
   color: #E4E4E4; /* text color (3) */
@@ -144,6 +187,10 @@ p {
   position: absolute;
   right: 0;
   width: 50%;
+}
+
+.marker {
+  color: #F88A84;
 }
 
 /* Media Queries */

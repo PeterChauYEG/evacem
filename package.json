@@ -5,7 +5,10 @@
   "author": "Peter Chau <peter@labone.tech>",
   "private": true,
   "dependencies": {
+    "google-map-react": "^0.25.0",
     "react": "^16.1.0",
+    "react-fontawesome": "^1.6.1",
+    "react-google-maps": "^9.2.2",
     "react-scripts": "1.0.17"
   },
   "devDependencies": {
