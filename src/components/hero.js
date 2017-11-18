@@ -13,9 +13,7 @@ const Hero = () => (
         <div className='hero-decoration' />
       </div>
     </div>
-    <div className='hero-image'>
-      {/* <img src={heroMobile} alt='Edmonton Vietnamese Alliance Church' /> */}
-    </div>
+    <div className='hero-image' />
   </div>
 )
 

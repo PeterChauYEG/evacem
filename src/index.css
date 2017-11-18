@@ -80,6 +80,45 @@ p {
   justify-content: space-between;
 }
 
+.contact {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.contact-content {
+  background-color: #545454; /* text color (5) */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 8px;
+}
+
+.contact-address {
+  color: #E4E4E4;  /* text color (3) */
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.contact-email {
+  color: #E4E4E4;  /* text color (3) */
+  margin: 0;
+  text-decoration: underline;
+}
+
+.contact-name {
+  color: #E4E4E4;  /* text color (3) */
+  font-size: 1.05em;
+}
+
+.contact-map {
+  height: 350px;
+  width: 100%;
+}
+
 .footer-container {
   background-color: #545454; /* text color (5) */
   color: #E4E4E4; /* text color (3) */
@@ -146,6 +185,10 @@ p {
   width: 50%;
 }
 
+.marker {
+  color: #F88A84;
+}
+
 /* Media Queries */
 /* Large Mobile */
 @media only screen and (min-width: 414px) {
@@ -163,6 +206,20 @@ p {
 
   .about-content {
     margin: 0 32px;
+  }
+
+  .contact {
+    min-height: 400px;
+  }
+
+  .contact-content {
+    min-height: 200px;
+    padding: 32px 8px;
+    right: 16px;
+  }
+
+  .contact-map {
+    height: 400px;
   }
 
   .footer-container {
@@ -205,6 +262,38 @@ p {
 
   .about-content > p {
     max-width: 65ch;
+  }
+
+  .contact {
+    min-height: 600px;
+  }
+
+  .contact-content {
+    min-height: 300px;
+    padding: 48px 32px;
+    right: 10vw;
+  }
+
+  .contact-map {
+    height: 600px;
+  }
+
+  .contact-address {
+    font-size: 1.25em;
+    margin-top: 8px;
+  }
+
+  .contact-email {
+    color: #E4E4E4;  /* text color (3) */
+    margin-top: 8px;
+  }
+
+  .contact-email-container {
+    margin: 16px 0;
+  }
+
+  .contact-name {
+    font-size: 1.15em;
   }
 
   .footer-container {
@@ -256,6 +345,37 @@ p {
 
   .about-content > p {
     max-width: 90ch;
+  }
+
+  .contact {
+    min-height: 750px;
+  }
+
+  .contact-content {
+    min-height: 400px;
+    padding: 64px;
+    right: 20vw;
+  }
+
+  .contact-map {
+    height: 750px;
+  }
+
+  .contact-address {
+    font-size: 1.5em;
+    margin-top: 16px;
+  }
+
+  .contact-email {
+    margin-top: 8px;
+  }
+
+  .contact-email-container {
+    margin-top: 32px;
+  }
+
+  .contact-name {
+    font-size: 1.20em;
   }
 
   .footer-container {
