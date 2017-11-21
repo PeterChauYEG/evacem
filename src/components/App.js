@@ -8,11 +8,13 @@ import About from '../components/about'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
+import Values from '../components/values'
 
 const App = () => (
   <div className='App'>
     <Hero />
     <About />
+    <Values />
     <Contact />
     <Footer />
   </div>
