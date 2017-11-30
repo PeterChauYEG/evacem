@@ -191,6 +191,7 @@ p {
 
 .wc-hero {
   align-items: center;
+  color: #4030E8;
   display: flex;
   flex-direction: row;
   min-height: 280px;
@@ -219,6 +220,24 @@ p {
   font-family: 'Buda', cursive;
   font-size: 1.25em;
   margin: 0;
+}
+
+.wc-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: absolute;
+  right: 32px;
+  top: 0;
+  width: 40%;
+}
+
+.wc-nav li {
+  cursor: not-allowed;
+  display: inline;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 /* Media Queries */
