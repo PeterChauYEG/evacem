@@ -1,22 +1,26 @@
 import React from 'react'
+import {
+  Switch,
+  Route
+} from 'react-router-dom'
 
 // Styles
 import '../index.css'
 
 // Components
-import About from '../components/about'
-import Contact from '../components/contact'
-import Footer from '../components/footer'
-import Hero from '../components/hero'
-import Values from '../components/values'
+import MainApp from '../components/MainApp'
+import NoMatch from '../components/NoMatch'
+import WCApp from '../components/WCApp'
 
 const App = () => (
   <div className='App'>
-    <Hero />
-    <About />
-    <Values />
-    <Contact />
-    <Footer />
+    <Switch>
+      <Route exact path='/' component={MainApp} />
+      <Route path='/wintercamp' component={WCApp} />
+      <Route path='/ilovewintercamp' component={WCApp} />
+      <Route path='/wintercamp2018' component={WCApp} />
+      <Route component={NoMatch} />
+    </Switch>
   </div>
 )
 
