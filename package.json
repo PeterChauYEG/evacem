@@ -26,6 +26,7 @@
     "eject": "react-scripts eject",
     "fixcode": "standard --fix",
     "lint": "standard",
+    "predeploy": "mv build/index.html build/200.html",
     "start": "react-scripts start",
     "test": "npm run lint"
   },

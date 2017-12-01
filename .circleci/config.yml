@@ -69,6 +69,7 @@ jobs:
         - run: yarn run build
 
         # deploy the build
+        - run: yarn run predeploy
         - run: yarn run deploy
 
 workflows:
