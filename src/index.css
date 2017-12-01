@@ -249,6 +249,31 @@ p {
   font-weight: bold;
 }
 
+.wc-verse {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.wc-verse-author {
+  text-align: right;
+}
+
+.wc-verse-body p {
+  font-style: italic;
+}
+
+.wc-verse-content {
+  background-color: #F2F2F2;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  margin: 48px 16px;
+  padding: 16px;
+  width: 75vw;
+}
+
 /* Media Queries */
 /* Large Mobile */
 @media only screen and (min-width: 414px) {
@@ -322,6 +347,17 @@ p {
 
   .wc-nav {
     right: 16px;
+  }
+
+  .wc-verse {
+    min-height: 400px;
+  }
+
+  .wc-verse-content {
+    border-radius: 14px;
+    margin: 64px 32px;
+    padding: 32px;
+    width: 65vw;
   }
 }
 
@@ -445,6 +481,20 @@ p {
 
   .wc-nav li {
     font-size: 1em;
+  }
+
+  .wc-verse {
+    min-height: 600px;
+  }
+
+  .wc-verse-content {
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    margin: 64px 72px;
+    padding: 48px;
+    width: 60vw;
   }
 }
 
@@ -573,6 +623,17 @@ p {
   .wc-nav li {
     font-size: 1.15em;
   }
+
+  .wc-verse {
+    min-height: 800px;
+  }
+
+  .wc-verse-content {
+    border-radius: 16px;
+    height: 20vh;
+    padding: 48px;
+    width: 60vw;
+  }
 }
 
 /* Desktop HD */
@@ -631,5 +692,14 @@ p {
 
   .wc-nav li {
     font-size: 1.25em;
+  }
+
+  .wc-verse {
+    min-height: 900px;
+  }
+
+  .wc-verse-content {
+    border-radius: 18px;
+    padding: 48px;
   }
 }
