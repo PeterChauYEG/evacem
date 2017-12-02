@@ -20,10 +20,10 @@ const FAQ = [
       `For more info about our host for this year's camp, you can check out their website at:  http://www.campnakamun.com`
     ]
   },
-  {
-    question: 'How do I get there?',
-    answers: ['[map here]']
-  },
+  // {
+  //   question: 'How do I get there?',
+  //   answers: ['[map here]']
+  // },
   {
     question: 'What activities are available?',
     answers: ['When we are not eating, sleeping, listening to our guest speaker or in our small groups, there will be times when we will have access to the indoor pool & hot tub, and a gym where you can play games such as basketball and volleyball.  There are also a couple of ping pong tables as well as space just to hang out and meet with friends both old and new!']

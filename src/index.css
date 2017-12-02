@@ -196,10 +196,14 @@ p {
   min-height: 280px;
 }
 
-.wc-faq-answer {
+.wc-faq-answers {
+  font-size: 1.15em;
+  line-height: 2em;
 }
 
 .wc-faq-body {
+  font-size: 1.15em;
+  line-height: 2em;
 }
 
 .wc-faq-content {
@@ -213,6 +217,7 @@ p {
 }
 
 .wc-faq-question p {
+  font-size: 1.25em;
   font-weight: bold;
 }
 
@@ -221,6 +226,7 @@ p {
 }
 
 .wc-faq-title {
+  font-size: 1.5em;
 }
 
 .wc-hero {
@@ -296,6 +302,7 @@ p {
 
 .wc-verse-body p {
   font-style: italic;
+  line-height: 1.75em;
 }
 
 .wc-verse-content {
@@ -359,6 +366,11 @@ p {
     width: 65vw;
   }
 
+  .wc-faq-title {
+    font-size: 1.75em;
+    line-height: 2.5em;
+  }
+
   .wc-faq-section {
     margin: 24px 0;
   }
@@ -420,7 +432,6 @@ p {
   }
 
   .about-content {
-    /*align-self: center;*/
     margin: 0 48px;
   }
 
@@ -487,10 +498,28 @@ p {
     font-size: 1.75em;
   }
 
+  .wc-faq-answers {
+    font-size: 1.35em;
+  }
+
+  .wc-faq-body {
+    font-size: 1.35em;
+  }
+
   .wc-faq-content {
     margin: 64px 72px;
     padding: 48px;
     width: 60vw;
+  }
+
+  .wc-faq-question p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .wc-faq-title {
+    font-size: 2em;
+    line-height: 3em;
   }
 
   .wc-faq-section {
@@ -539,6 +568,10 @@ p {
 
   .wc-verse {
     min-height: 600px;
+  }
+
+  .wc-verse-body p {
+    line-height: 2em;
   }
 
   .wc-verse-content {
@@ -638,13 +671,26 @@ p {
     font-size: 3em;
   }
 
+  .wc-faq-answers {
+    font-size: 1.75em;
+  }
+
+  .wc-faq-body {
+    font-size: 1.75em;
+  }
+
   .wc-faq-content {
     padding: 48px;
     width: 60vw;
   }
 
-  .wc-faq-section {
-    margin: 48px 0;
+  .wc-faq-question p {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .wc-faq-title {
+    font-size: 3em;
   }
 
   .wc-hero {
@@ -691,6 +737,10 @@ p {
     min-height: 800px;
   }
 
+  .wc-verse-body p {
+    line-height: 2.5em;  
+  }
+
   .wc-verse-content {
     border-radius: 16px;
     height: 20vh;
@@ -710,7 +760,6 @@ p {
   }
 
   .about-content {
-    /*align-self: center;*/
     margin: 0 64px;
   }
 
@@ -728,10 +777,6 @@ p {
 
   .wc-faq-content {
     padding: 48px;
-  }
-
-  .wc-faq-section {
-    margin: 64px 0;
   }
 
   .wc-hero {
