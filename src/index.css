@@ -672,11 +672,11 @@ p {
   }
 
   .wc-faq-answers {
-    font-size: 1.75em;
+    font-size: 1.15em;
   }
 
   .wc-faq-body {
-    font-size: 1.75em;
+    font-size: 1.15em;
   }
 
   .wc-faq-content {
@@ -685,7 +685,7 @@ p {
   }
 
   .wc-faq-question p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
   }
 
@@ -738,12 +738,12 @@ p {
   }
 
   .wc-verse-body p {
-    line-height: 2.5em;  
+    line-height: 2.5em;
   }
 
   .wc-verse-content {
     border-radius: 16px;
-    height: 20vh;
+    height: 30vh;
     padding: 48px;
     width: 60vw;
   }
