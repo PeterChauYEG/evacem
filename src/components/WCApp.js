@@ -7,12 +7,14 @@ import '../index.css'
 import Footer from '../components/footer'
 import WCFAQ from '../components/wcfaq'
 import WCHero from '../components/wchero'
+import WCSpeaker from '../components/wcspeaker'
 import WCVerse from '../components/wcverse'
 
 const WCApp = () => (
   <div className='WCApp'>
     <WCHero />
     <WCVerse />
+    <WCSpeaker />
     <WCFAQ />
     <Footer />
   </div>
