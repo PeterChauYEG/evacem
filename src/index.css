@@ -189,6 +189,27 @@ p {
   color: #F88A84;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+.nav li {
+  cursor: not-allowed;
+  display: inline;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #545454; /* text color (5) */
+}
+
 .wc-faq {
   align-items: center;
   display: flex;
@@ -526,6 +547,15 @@ p {
     font-size: 1.75em;
   }
 
+  .nav {
+    top: 8px;
+    right: 32px;
+  }
+
+  .nav li {
+    font-size: 1em;
+  }
+
   .wc-faq-answers {
     font-size: 1.35em;
   }
@@ -712,6 +742,15 @@ p {
     font-size: 3em;
   }
 
+  .nav {
+    top: 8px;
+    right: 48px;
+  }
+
+  .nav li {
+    font-size: 1.15em;
+  }
+
   .wc-faq-answers {
     font-size: 1.15em;
   }
@@ -841,6 +880,15 @@ p {
 
   .hero {
     min-height: 750px;
+  }
+
+  .nav {
+    top: 16px;
+    right: 48px;
+  }
+
+  .nav li {
+    font-size: 1.25em;
   }
 
   .wc-faq-content {
