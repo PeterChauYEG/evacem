@@ -1,10 +1,17 @@
 import React from 'react'
 
+import {
+  Link
+} from 'react-router-dom'
+
 // import css
 import '../index.css'
 
 const Hero = () => (
   <div className='hero'>
+    <ul className='nav'>
+      <li><Link to='/wintercamp'>Wintercamp 2017</Link></li>
+    </ul>
     <div className='hero-content'>
       <h1 className='hero-title'>Edmonton Vietnamese</h1>
       <h1 className='hero-title'>Alliance Church</h1>

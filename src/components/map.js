@@ -30,7 +30,7 @@ class Map extends Component {
           lat={marker.lat}
           lng={marker.lng}
           size='3x'
-        />
+          />
       </GoogleMapReact>
     )
   }
