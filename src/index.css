@@ -199,7 +199,6 @@ p {
 }
 
 .nav li {
-  cursor: not-allowed;
   display: inline;
   font-size: 0.8em;
   font-weight: bold;
@@ -304,10 +303,16 @@ p {
 }
 
 .wc-nav li {
-  cursor: not-allowed;
   display: inline;
+  cursor: pointer;
   font-size: 0.8em;
   font-weight: bold;
+}
+
+.wc-nav li a {
+  width: max-content;
+  text-decoration: none;
+  color: #4030E8;
 }
 
 .wc-speaker-name p {
