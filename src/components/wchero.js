@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as Scroll from 'react-scroll';
+import * as Scroll from 'react-scroll'
 
 import {
   Link
@@ -19,7 +19,7 @@ const handleNavigate = (name) => {
       duration: 1500,
       delay: 100,
       smooth: true,
-      offset: 50, // Scrolls to element + 50 pixels down the page
+      offset: 50 // Scrolls to element + 50 pixels down the page
     }
   )
 }
