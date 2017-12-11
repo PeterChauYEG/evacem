@@ -14,7 +14,7 @@ const WCRegistration = () => (
         <a>
           Link to Waiver
         </a>
-        
+
         <div className='wc-registration-form'>
 
           <div className='input-label'>
