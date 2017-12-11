@@ -273,7 +273,7 @@ p {
 .wc-hero-sub {
   border-radius: 16px;
   border: 1px solid;
-  cursor: not-allowed;
+  cursor: pointer;
   display: block;
   flex-shrink: 0;
   float: left;
