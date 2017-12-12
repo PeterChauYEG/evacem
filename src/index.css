@@ -28,16 +28,45 @@ body {
   padding: 0;
 }
 
+button {
+  border: none;
+  background-color: #4030E8;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 10px 8px;
+  width: -webkit-fill-available;
+}
+
 h1 {
   font-size: 1.75em;
   font-weight: 300;
   margin: 0;
 }
 
+input {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 10px 8px;
+  width: -webkit-fill-available;
+}
+
 p {
   font-size: 1em;
   font-weight: 300;
   margin: 16px 0 0 0;
+}
+
+textarea {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 8px 0 16px 0;
+  padding: 10px 8px;
+  width: -webkit-fill-available;
 }
 
 /* id */
@@ -185,6 +214,22 @@ p {
   width: 50%;
 }
 
+.input-label {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 16px 0;
+}
+
+.input-label p {
+  margin: 0 0 0 16px;
+}
+
+.input-label input {
+  margin: 0;
+}
+
 .marker {
   color: #F88A84;
 }
@@ -316,14 +361,30 @@ p {
   color: #4030E8;
 }
 
+.wc-registration-checkbox {
+  height: 16px;
+  width: 16px;
+}
+
 .wc-registration-form {
-  margin: 16px 0;
+  margin: 32px 0;
+}
+
+.wc-registration-input {
+  border-radius: 4px;
+}
+
+.wc-registration-label p {
+  font-size: 1.25em;
 }
 
 .wc-registration-link {
   display: block;
   margin-top: 16px;
   text-decoration: underline;
+}
+
+.wc-registration-textarea {
 }
 
 .wc-speaker-name p {
@@ -640,6 +701,14 @@ p {
     font-size: 1em;
   }
 
+  .wc-registration-form {
+    margin: 64px 0;
+  }
+
+  .wc-registration-label p {
+    font-size: 1.5em;
+  }
+
   .wc-speaker-name p {
     font-size: 1.5em;
     font-weight: bold;
@@ -827,6 +896,10 @@ p {
 
   .wc-nav li {
     font-size: 1.15em;
+  }
+
+  .wc-registration-label p {
+    font-size: 1.5em;
   }
 
   .wc-speaker-name {

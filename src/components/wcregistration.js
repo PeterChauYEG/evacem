@@ -22,84 +22,122 @@ const WCRegistration = () => (
 
         <div className='wc-registration-form'>
 
-          <div className='input-label'>
-            First Name
+          <div className='wc-registration-label'>
+            <p>
+              First Name
+            </p>
           </div>
-          <input className='input' />
-          <div className='input-label'>
-            Last Name
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Last Name
+            </p>
           </div>
-          <input className='input' />
+          <input className='wc-registration-input' />
+
+          <div className='wc-registration-label'>
+            <p>
+              Address
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              City
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Province
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Postal Code
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+
+          <div className='wc-registration-label'>
+            <p>
+              Home Phone
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Cell Phone
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+
+          <div className='wc-registration-label'>
+            <p>
+              Age
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Gender
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Medical Conditions
+            </p>
+          </div>
+          <textarea className='wc-registration-textarea' />
+          <div className='wc-registration-label'>
+            <p>
+              Emergency Contact Name
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Emergency Contact Number
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+
+          <div className='wc-registration-label'>
+            <p>
+              Home Church
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              How Long Have You Been a Christian?
+            </p>
+          </div>
+          <input className='wc-registration-input' />
+          <div className='wc-registration-label'>
+            <p>
+              Additional Comments
+            </p>
+          </div>
+          <textarea className='wc-registration-textarea'
+            rows={4} />
 
           <div className='input-label'>
-            Address
+            <p>
+              I Will Bring a Signed Waiver to Camp
+            </p>
+            <input type='checkbox'
+              className='wc-registration-checkbox' />
           </div>
-          <input className='input' />
           <div className='input-label'>
-            City
+            <p>
+              I Agree to Abide By All Camp Rules
+            </p>
+            <input type='checkbox'
+              className='wc-registration-checkbox' />
           </div>
-          <input className='input' />
-          <div className='input-label'>
-            Province
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            Postal Code
-          </div>
-          <input className='input' />
-
-          <div className='input-label'>
-            Home Phone
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            Cell Phone
-          </div>
-          <input className='input' />
-
-          <div className='input-label'>
-            Age
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            Gender
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            Medical Conditions
-          </div>
-          <textarea className='textarea' />
-          <div className='input-label'>
-            Emergency Contact Name
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            Emergency Contact Number
-          </div>
-          <input className='input' />
-
-          <div className='input-label'>
-            Home Church
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            How Long Have You Been a Christian?
-          </div>
-          <input className='input' />
-          <div className='input-label'>
-            I Will Bring a Signed Waiver to Camp
-          </div>
-          <input type='checkbox'
-            className='checkbox' />
-          <div className='input-label'>
-            I Agree to Abide By All Camp Rules
-          </div>
-          <input type='checkbox'
-            className='checkbox' />
-          <div className='input-label'>
-            Additional Comments
-          </div>
-          <textarea className='textarea' />
 
           <div>
             <button className='input-button'>
