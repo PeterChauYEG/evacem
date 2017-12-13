@@ -36,7 +36,7 @@ button {
   font-weight: 300;
   margin: 16px 0;
   padding: 10px 8px;
-  width: -webkit-fill-available;
+  width: stretch;
 }
 
 h1 {
@@ -51,7 +51,7 @@ input {
   font-weight: 300;
   margin: 16px 0;
   padding: 10px 8px;
-  width: -webkit-fill-available;
+  width: stretch;
 }
 
 p {
@@ -66,7 +66,7 @@ textarea {
   font-weight: 300;
   margin: 8px 0 16px 0;
   padding: 10px 8px;
-  width: -webkit-fill-available;
+  width: stretch;
 }
 
 /* id */
@@ -363,7 +363,12 @@ textarea {
 
 .wc-registration-checkbox {
   height: 16px;
+  margin-bottom: 10%;
   width: 16px;
+}
+
+.wc-registration-container-submit {
+  margin-top: 10%;
 }
 
 .wc-registration-form {
@@ -372,6 +377,7 @@ textarea {
 
 .wc-registration-input {
   border-radius: 4px;
+  margin-bottom: 10%;
 }
 
 .wc-registration-label p {
@@ -385,6 +391,7 @@ textarea {
 }
 
 .wc-registration-textarea {
+  margin-bottom: 10%;
 }
 
 .wc-speaker-name p {
@@ -549,6 +556,11 @@ textarea {
     font-size: 18px; /* base desktop font size */
   }
 
+  button {
+    padding: 16px;
+    width: 50%;
+  }
+
   .about {
     min-height: 600px;
   }
@@ -705,8 +717,21 @@ textarea {
     margin: 64px 0;
   }
 
-  .wc-registration-label p {
-    font-size: 1.5em;
+  .wc-registration-checkbox {
+    height: 18px;
+    width: 18px;
+  }
+
+  .wc-registration-container-submit {
+    margin-top: 20%;
+  }
+
+  .wc-registration-input {
+    width: 75%;
+  }
+
+  .wc-registration-textarea {
+    width: 75%;
   }
 
   .wc-speaker-name p {
