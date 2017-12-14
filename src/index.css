@@ -28,17 +28,6 @@ body {
   padding: 0;
 }
 
-button {
-  border: none;
-  background-color: #4030E8;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 300;
-  margin: 16px 0;
-  padding: 10px 8px;
-  width: stretch;
-}
-
 h1 {
   font-size: 1.75em;
   font-weight: 300;
@@ -212,6 +201,17 @@ textarea {
   position: absolute;
   right: 0;
   width: 50%;
+}
+
+.input-button {
+  border: none;
+  background-color: #4030E8;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 10px 8px;
+  width: stretch;
 }
 
 .input-label {
@@ -556,11 +556,6 @@ textarea {
     font-size: 18px; /* base desktop font size */
   }
 
-  button {
-    padding: 16px;
-    width: 50%;
-  }
-
   .about {
     min-height: 600px;
   }
@@ -634,6 +629,11 @@ textarea {
 
   .hero-subtitle {
     font-size: 1.75em;
+  }
+
+  .input-button {
+    padding: 16px;
+    width: 50%;
   }
 
   .nav {

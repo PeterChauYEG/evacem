@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
+import * as firebase from 'firebase'
+import { ToastContainer, toast, style } from 'react-toastify'
 
 // import css
 import '../index.css'
 
 // import photo
 import waiver from '../media/WC2018_Waiver.pdf'
+
+// setup toast style
+style({
+  // width: '50%'
+  fontSize: '10px'
+})
 
 class WCRegistration extends Component {
   constructor (props) {
@@ -15,10 +23,11 @@ class WCRegistration extends Component {
       additionalComments: '',
       address: '',
       age: null,
-      agreeToAbide: null,
+      agreeToAbide: false,
       belief: null,
       cellPhone: null,
       city: '',
+      email: '',
       emergencyContactName: '',
       emergencyContactNumber: null,
       firstName: '',
@@ -29,7 +38,7 @@ class WCRegistration extends Component {
       medicalConditions: '',
       postalCode: '',
       province: '',
-      willBringWaiver: null
+      willBringWaiver: false
     }
 
     // bind functions
@@ -38,8 +47,17 @@ class WCRegistration extends Component {
   }
 
   handleChange (event) {
+    // get type
+    const type = event.target.type
+
     // get value
-    const value = this.sanitize(event.target.value, event.target.type)
+    let value
+
+    if (type === 'checkbox') {
+      value = this.sanitize(event.target.checked, type)
+    } else {
+      value = this.sanitize(event.target.value, type)
+    }
 
     // get name
     const name = event.target.name
@@ -48,6 +66,70 @@ class WCRegistration extends Component {
     this.setState({
       [name]: value
     })
+  }
+
+  handleSubmit (e) {
+    e.preventDefault()
+
+    const {
+      additionalComments,
+      address,
+      age,
+      agreeToAbide,
+      belief,
+      cellPhone,
+      city,
+      email,
+      emergencyContactName,
+      emergencyContactNumber,
+      firstName,
+      gender,
+      homeChurch,
+      homePhone,
+      lastName,
+      medicalConditions,
+      postalCode,
+      province,
+      willBringWaiver
+    } = this.state
+
+    // make sure checkboxes arent undefined
+    // else exit
+    if (!willBringWaiver || !agreeToAbide) {
+      toast.error('Please agree to the terms', {
+        position: toast.POSITION.TOP_CENTER
+      })
+
+      return
+    }
+
+    const data = {
+      additionalComments,
+      address,
+      age,
+      agreeToAbide,
+      belief,
+      cellPhone,
+      city,
+      email,
+      emergencyContactName,
+      emergencyContactNumber,
+      firstName,
+      gender,
+      homeChurch,
+      homePhone,
+      lastName,
+      medicalConditions,
+      postalCode,
+      province,
+      willBringWaiver
+    }
+
+    // setup db services
+    let database = firebase.database()
+
+    // make request
+    this.writeRegistration(data, database)
   }
 
   sanitize (input, type) {
@@ -62,12 +144,14 @@ class WCRegistration extends Component {
           : undefined
         break
       case 'number':
-        // make sure it's a number
-        sanitized = typeof input === 'number'
+        // make sure it's a string
+        sanitized = typeof input === 'string'
           ? input
           : undefined
         break
+      case 'email':
       case 'text':
+      case 'textarea':
         // make sure it's a string
         sanitized = typeof input === 'string'
           ? input.trim().replace(/(<([^>]+)>)/ig, '')
@@ -86,49 +170,17 @@ class WCRegistration extends Component {
     return sanitized
   }
 
-  handleSubmit (e) {
-    e.preventDefault()
-
+  writeRegistration (data, database) {
     const {
-      additionalComments,
-      address,
-      age,
-      agreeToAbide,
-      belief,
-      cellPhone,
-      city,
-      emergencyContactName,
-      emergencyContactNumber,
       firstName,
-      gender,
-      homeChurch,
-      homePhone,
-      lastName,
-      medicalConditions,
-      postalCode,
-      province,
-      willBringWaiver
-    } = this.state
+      lastName
+    } = data
 
-    console.log({
-      additionalComments,
-      address,
-      age,
-      agreeToAbide,
-      belief,
-      cellPhone,
-      city,
-      emergencyContactName,
-      emergencyContactNumber,
-      firstName,
-      gender,
-      homeChurch,
-      homePhone,
-      lastName,
-      medicalConditions,
-      postalCode,
-      province,
-      willBringWaiver
+    // write the data
+    database.ref('registrations/' + firstName + lastName).set(data)
+
+    toast.success('Registered! You should receive a confirmation email', {
+      position: toast.POSITION.TOP_CENTER
     })
   }
 
@@ -164,6 +216,15 @@ class WCRegistration extends Component {
               </div>
               <input className='wc-registration-input'
                 name='lastName'
+                onChange={this.handleChange} />
+              <div className='wc-registration-label'>
+                <p>
+                  Email
+                </p>
+              </div>
+              <input className='wc-registration-input'
+                name='email'
+                type='email'
                 onChange={this.handleChange} />
 
               <div className='wc-registration-label'>
@@ -315,6 +376,7 @@ class WCRegistration extends Component {
                   onClick={this.handleSubmit}>
                   Submit
                 </button>
+                <ToastContainer autoClose={false} />
               </div>
 
             </div>
