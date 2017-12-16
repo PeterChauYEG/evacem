@@ -10,7 +10,7 @@ import '../index.css'
 const Hero = () => (
   <div className='hero'>
     <ul className='nav'>
-      <li><Link to='/wintercamp'>Wintercamp 2017</Link></li>
+      <li><Link to='/wintercamp'>Wintercamp 2018</Link></li>
     </ul>
     <div className='hero-content'>
       <h1 className='hero-title'>Edmonton Vietnamese</h1>

@@ -34,10 +34,28 @@ h1 {
   margin: 0;
 }
 
+input {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 10px 8px;
+  width: stretch;
+}
+
 p {
   font-size: 1em;
   font-weight: 300;
   margin: 16px 0 0 0;
+}
+
+textarea {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 8px 0 16px 0;
+  padding: 10px 8px;
+  width: stretch;
 }
 
 /* id */
@@ -185,6 +203,33 @@ p {
   width: 50%;
 }
 
+.input-button {
+  border: none;
+  background-color: #4030E8;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 10px 8px;
+  width: stretch;
+}
+
+.input-label {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 16px 0;
+}
+
+.input-label p {
+  margin: 0 0 0 16px;
+}
+
+.input-label input {
+  margin: 0;
+}
+
 .marker {
   color: #F88A84;
 }
@@ -202,6 +247,7 @@ p {
   display: inline;
   font-size: 0.8em;
   font-weight: bold;
+  z-index: 99;
 }
 
 .nav li a {
@@ -273,7 +319,7 @@ p {
 .wc-hero-sub {
   border-radius: 16px;
   border: 1px solid;
-  cursor: not-allowed;
+  cursor: pointer;
   display: block;
   flex-shrink: 0;
   float: left;
@@ -313,6 +359,39 @@ p {
   width: max-content;
   text-decoration: none;
   color: #4030E8;
+}
+
+.wc-registration-checkbox {
+  height: 16px;
+  margin-bottom: 10%;
+  width: 16px;
+}
+
+.wc-registration-container-submit {
+  margin-top: 10%;
+}
+
+.wc-registration-form {
+  margin: 32px 0;
+}
+
+.wc-registration-input {
+  border-radius: 4px;
+  margin-bottom: 10%;
+}
+
+.wc-registration-label p {
+  font-size: 1.25em;
+}
+
+.wc-registration-link {
+  display: block;
+  margin-top: 16px;
+  text-decoration: underline;
+}
+
+.wc-registration-textarea {
+  margin-bottom: 10%;
 }
 
 .wc-speaker-name p {
@@ -552,6 +631,11 @@ p {
     font-size: 1.75em;
   }
 
+  .input-button {
+    padding: 16px;
+    width: 50%;
+  }
+
   .nav {
     top: 8px;
     right: 32px;
@@ -627,6 +711,27 @@ p {
 
   .wc-nav li {
     font-size: 1em;
+  }
+
+  .wc-registration-form {
+    margin: 64px 0;
+  }
+
+  .wc-registration-checkbox {
+    height: 18px;
+    width: 18px;
+  }
+
+  .wc-registration-container-submit {
+    margin-top: 20%;
+  }
+
+  .wc-registration-input {
+    width: 75%;
+  }
+
+  .wc-registration-textarea {
+    width: 75%;
   }
 
   .wc-speaker-name p {
@@ -816,6 +921,10 @@ p {
 
   .wc-nav li {
     font-size: 1.15em;
+  }
+
+  .wc-registration-label p {
+    font-size: 1.5em;
   }
 
   .wc-speaker-name {
