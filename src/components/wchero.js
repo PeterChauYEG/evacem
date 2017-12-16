@@ -36,7 +36,7 @@ const WCHero = () => (
       <h1 className='wc-hero-subtitle'>Love Like No Other</h1>
       <div className='wc-hero-sub'
         onClick={handleNavigate.bind(null, 'registration')}>
-        <p>Register Now</p>
+        <p>Registration</p>
       </div>
     </div>
   </div>

@@ -5,9 +5,6 @@ import { ToastContainer, toast, style } from 'react-toastify'
 // import css
 import '../index.css'
 
-// import photo
-import waiver from '../media/WC2018_Waiver.pdf'
-
 // setup toast style
 style({
   // width: '50%'
@@ -196,7 +193,7 @@ class WCRegistration extends Component {
             </p>
             <a className='wc-registration-link'
               target='_blank'
-              href={waiver}>
+              href='http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf'>
               Link to Waiver
             </a>
 
