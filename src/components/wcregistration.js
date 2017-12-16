@@ -172,12 +172,13 @@ class WCRegistration extends Component {
 
   writeRegistration (data, database) {
     const {
+      city,
       firstName,
       lastName
     } = data
 
     // write the data
-    database.ref('registrations/' + firstName + lastName).set(data)
+    database.ref('registrations/' + firstName + lastName + city).set(data)
 
     toast.success('Registered! You should receive a confirmation email', {
       position: toast.POSITION.TOP_CENTER

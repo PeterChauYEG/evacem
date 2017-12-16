@@ -12,13 +12,14 @@ import registerServiceWorker from './registerServiceWorker'
 // styles
 import './index.css'
 
+// put env's from surge here.
 const config = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: '',
-  messagingSenderId: ''
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
 }
 
 ReactDOM.render((
