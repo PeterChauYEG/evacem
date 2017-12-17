@@ -20,10 +20,10 @@ const FAQ = [
       `For more info about our host for this year's camp, you can check out their website at:  http://www.campnakamun.com`
     ]
   },
-  // {
-  //   question: 'How do I get there?',
-  //   answers: ['[map here]']
-  // },
+  {
+    question: 'How do I get there?',
+    answers: ['http://res.cloudinary.com/diy9jjbzh/image/upload/v1513477603/images/CampNakamun.jpg']
+  },
   {
     question: 'What activities are available?',
     answers: ['When we are not eating, sleeping, listening to our guest speaker or in our small groups, there will be times when we will have access to the indoor pool & hot tub, and a gym where you can play games such as basketball and volleyball.  There are also a couple of ping pong tables as well as space just to hang out and meet with friends both old and new!']
@@ -71,9 +71,24 @@ const FAQ = [
 ]
 
 // renderAnswers
-const renderAnswers = (answers) => answers.map((answer, i) => (
-  <p key={i}>{answer}</p>
-))
+const renderAnswers = (answers) => answers.map((answer, i) => {
+  if (answer === 'http://res.cloudinary.com/diy9jjbzh/image/upload/v1513477603/images/CampNakamun.jpg') {
+    return (
+      <a className='wc-registration-link'
+        href={answer}
+        target='_blank'
+        key={i}
+        rel='noopener noreferrer'>
+        <img
+          className='wc-map'
+          src={answer}
+          alt='Map to Camp Nakamun' />
+      </a>
+    )
+  }
+
+  return <p key={i}>{answer}</p>
+})
 
 // renderFAQ
 const renderFAQ = (FAQ) => FAQ.map((pair, i) => (

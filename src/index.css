@@ -338,6 +338,12 @@ textarea {
   margin: 0;
 }
 
+.wc-map {
+  height: 100%;
+  width: 100%;
+  margin: 16px 0;
+}
+
 .wc-nav {
   display: flex;
   justify-content: space-between;
