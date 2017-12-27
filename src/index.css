@@ -230,6 +230,13 @@ textarea {
   margin: 0;
 }
 
+.invite-content {
+  align-self: center;
+  justify-content: center;
+  margin: 0 16px;
+  text-align: center;
+}
+
 .marker {
   color: #F88A84;
 }
@@ -491,6 +498,10 @@ textarea {
     padding: 0 32px;
   }
 
+  .invite-content {
+    margin: 0 32px;
+  }
+
   .wc-faq-content {
     margin: 64px 32px;
     padding: 32px;
@@ -567,6 +578,7 @@ textarea {
   }
 
   .about-container {
+    justify-content: center;
     min-height: 504px;
   }
 
@@ -640,6 +652,14 @@ textarea {
   .input-button {
     padding: 16px;
     width: 50%;
+  }
+
+  .invite-content {
+    margin: 0 48px;
+  }
+
+  .invite-content > h1 {
+    max-width: 65ch;
   }
 
   .nav {
@@ -792,7 +812,7 @@ textarea {
   }
 
   .about-content > p {
-    max-width: 90ch;
+    max-width: 65ch;
   }
 
   .contact {
@@ -856,6 +876,15 @@ textarea {
 
   .hero-subtitle {
     font-size: 3em;
+  }
+
+  .invite-content {
+    /*align-self: center;*/
+    margin: 0 64px;
+  }
+
+  .invite-content > h1 {
+    max-width: 65ch;
   }
 
   .nav {
@@ -1000,6 +1029,10 @@ textarea {
 
   .hero {
     min-height: 750px;
+  }
+
+  .invite-content {
+    margin: 0 64px;
   }
 
   .nav {
