@@ -7,6 +7,7 @@ import '../index.css'
 import About from '../components/about'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
+import Invite from '../components/invite'
 import Hero from '../components/hero'
 import Values from '../components/values'
 
@@ -15,6 +16,7 @@ const MainApp = () => (
     <Hero />
     <About />
     <Values />
+    <Invite />
     <Contact />
     <Footer />
   </div>
