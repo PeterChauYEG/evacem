@@ -3,7 +3,7 @@ import React from 'react'
 // import css
 import '../index.css'
 
-const About = () => (
+const Invite = () => (
   <div className='about'>
     <div className='about-decoration' />
     <div className='about-container'>
@@ -14,4 +14,4 @@ const About = () => (
   </div>
 )
 
-export default About
+export default Invite
