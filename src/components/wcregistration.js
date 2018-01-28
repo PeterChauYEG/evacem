@@ -286,7 +286,7 @@ class WCRegistration extends Component {
               </div>
               <input className='wc-registration-input'
                 type='number'
-                inputmode='numeric'
+                inputMode='numeric'
                 pattern='[0-9]*'
                 name='age'
                 onChange={this.handleChange} />
@@ -340,7 +340,7 @@ class WCRegistration extends Component {
               </div>
               <input className='wc-registration-input'
                 type='number'
-                inputmode='numeric'
+                inputMode='numeric'
                 pattern='[0-9]*'
                 name='belief'
                 onChange={this.handleChange} />
