@@ -988,7 +988,6 @@ textarea {
   .wc-logo {
     display: flex;
     flex-direction: row;
-    min-height: 750px;
     justify-content: space-between;
     padding: 0 64px;
   }
