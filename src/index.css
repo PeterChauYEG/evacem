@@ -345,6 +345,23 @@ textarea {
   margin: 0;
 }
 
+.wc-logo {
+  align-items: center;
+  color: #4030E8;
+  display: flex;
+  flex-direction: row;
+  min-height: 280px;
+}
+
+.wc-logo-image {
+  background-size: 100%;
+  background: url('http://res.cloudinary.com/diy9jjbzh/image/upload/v1517114484/branding/winter_camp_logo.png') no-repeat center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
 .wc-map {
   height: 100%;
   width: 100%;
@@ -543,6 +560,14 @@ textarea {
     padding: 6px 16px;
   }
 
+  .wc-logo {
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+
   .wc-nav {
     right: 16px;
   }
@@ -727,6 +752,18 @@ textarea {
     font-size: 1.25em;
     margin: 0;
     padding: 10px 18px;
+  }
+
+  .wc-logo {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+
+  .wc-logo-image {
+    background: url('http://res.cloudinary.com/diy9jjbzh/image/upload/v1517117918/branding/winter_camp_logo-tablet.png') no-repeat center;
   }
 
   .wc-nav {
@@ -948,6 +985,14 @@ textarea {
     padding: 16px 32px;
   }
 
+  .wc-logo {
+    display: flex;
+    flex-direction: row;
+    min-height: 750px;
+    justify-content: space-between;
+    padding: 0 64px;
+  }
+
   .wc-nav {
     top: 8px;
     right: 48px;
@@ -1067,6 +1112,14 @@ textarea {
     font-size: 2em;
     margin: 0;
     padding: 20px 36px;
+  }
+
+  .wc-logo {
+    min-height: 750px;
+  }
+
+  .wc-logo-image {
+    background: url('http://res.cloudinary.com/diy9jjbzh/image/upload/v1517118197/branding/winter_camp_logo-desktop.png') no-repeat center;
   }
 
   .wc-nav {

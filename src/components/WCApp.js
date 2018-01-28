@@ -9,6 +9,7 @@ import '../index.css'
 import Footer from '../components/footer'
 import WCFAQ from '../components/wcfaq'
 import WCHero from '../components/wchero'
+import WCLogo from '../components/WCLogo'
 import WCRegistration from '../components/wcregistration'
 import WCSpeaker from '../components/wcspeaker'
 import WCVerse from '../components/wcverse'
@@ -18,6 +19,7 @@ let Element = Scroll.Element
 const WCApp = () => (
   <div className='WCApp'>
     <WCHero />
+    <WCLogo />
     <WCVerse />
     <Element name='speaker'>
       <WCSpeaker />
