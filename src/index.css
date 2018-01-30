@@ -205,7 +205,7 @@ textarea {
 
 .input-button {
   border: none;
-  background-color: #4030E8;
+  background-color: #9F2529;
   color: #fff;
   font-size: 1em;
   font-weight: 300;
@@ -304,7 +304,7 @@ textarea {
 
 .wc-hero {
   align-items: center;
-  color: #4030E8;
+  color: #9F2529;
   display: flex;
   flex-direction: row;
   min-height: 280px;
@@ -347,7 +347,7 @@ textarea {
 
 .wc-logo {
   align-items: center;
-  color: #4030E8;
+  color: #9F2529;
   display: flex;
   flex-direction: row;
   min-height: 280px;
@@ -388,7 +388,7 @@ textarea {
 .wc-nav li a {
   width: max-content;
   text-decoration: none;
-  color: #4030E8;
+  color: #9F2529;
 }
 
 .wc-registration-checkbox {
