@@ -10,7 +10,7 @@ import '../index.css'
 // Components
 import MainApp from '../components/MainApp'
 import NoMatch from '../components/NoMatch'
-import WCApp from '../components/WCApp'
+import WCApp from '../components/WCApp-closedRegistration'
 
 const App = () => (
   <div className='App'>

@@ -345,6 +345,21 @@ textarea {
   margin: 0;
 }
 
+.wc-hero-sub-closedRegistration {
+  border-radius: 16px;
+  border: 1px solid;
+  display: block;
+  flex-shrink: 0;
+  float: left;
+  margin-top: 8px;
+}
+
+.wc-hero-sub-closedRegistration p {
+  font-size: 1em;
+  margin: 0;
+  padding: 4px 8px;
+}
+
 .wc-logo {
   align-items: center;
   color: #9F2529;
@@ -560,6 +575,16 @@ textarea {
     padding: 6px 16px;
   }
 
+  .wc-hero-sub-closedRegistration {
+    border-radius: 16px;
+    margin-top: 16px;
+  }
+
+  .wc-hero-sub-closedRegistration p {
+    margin: 0;
+    padding: 6px 16px;
+  }
+
   .wc-logo {
     display: flex;
     flex-direction: row;
@@ -749,6 +774,17 @@ textarea {
   }
 
   .wc-hero-sub p {
+    font-size: 1.25em;
+    margin: 0;
+    padding: 10px 18px;
+  }
+
+  .wc-hero-sub-closedRegistration {
+    border-radius: 32px;
+    margin-top: 32px;
+  }
+
+  .wc-hero-sub-closedRegistration p {
     font-size: 1.25em;
     margin: 0;
     padding: 10px 18px;
@@ -985,6 +1021,17 @@ textarea {
     padding: 16px 32px;
   }
 
+  .wc-hero-sub-closedRegistration {
+    border-radius: 36px;
+    margin-top: 48px;
+  }
+
+  .wc-hero-sub-closedRegistration p {
+    font-size: 1.75em;
+    margin: 0;
+    padding: 16px 32px;
+  }
+
   .wc-logo {
     display: flex;
     flex-direction: row;
@@ -1108,6 +1155,17 @@ textarea {
   }
 
   .wc-hero-sub p {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 36px;
+  }
+
+  .wc-hero-sub-closedRegistration {
+    border-radius: 40px;
+    margin-top: 48px;
+  }
+
+  .wc-hero-sub-closedRegistration p {
     font-size: 2em;
     margin: 0;
     padding: 20px 36px;
