@@ -67,6 +67,10 @@ const FAQ = [
   {
     question: 'What if I still have questions?',
     answers: ['No problem!  Email us at general@evacem.com']
+  },
+  {
+    question: 'Where can I download the waiver?',
+    answers: ['http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf']
   }
 ]
 
@@ -83,6 +87,18 @@ const renderAnswers = (answers) => answers.map((answer, i) => {
           className='wc-map'
           src={answer}
           alt='Map to Camp Nakamun' />
+      </a>
+    )
+  }
+
+  if (answer === 'http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf') {
+    return (
+      <a className='wc-registration-link'
+        href={answer}
+        target='_blank'
+        key={i}
+        rel='noopener noreferrer'>
+        <p>The waiver can be downloaded here.</p>
       </a>
     )
   }
