@@ -34,7 +34,7 @@ const WCHero = () => (
     <div className='wc-hero-content'>
       <h1 className='wc-hero-title'>Winter Camp 2019</h1>
       <h1 className='wc-hero-subtitle'>Greater Than</h1>
-      <div 
+      <div
         className='wc-hero-sub'
         onClick={handleNavigate.bind(null, 'registration')}>
         <p>Registration</p>
