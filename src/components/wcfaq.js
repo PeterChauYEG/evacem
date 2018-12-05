@@ -7,7 +7,7 @@ import '../index.css'
 const FAQ = [
   {
     question: 'When is it?',
-    answers: ['Friday February 16th at 8:30 PM to Monday February 19th at 10:30 AM.']
+    answers: ['Friday February 15th at 8:30 PM to Monday February 18th at 10:30 AM.']
   },
   {
     question: 'Who should come?',

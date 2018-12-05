@@ -8,8 +8,8 @@ import '../index.css'
 // Components
 import Footer from '../components/footer'
 import WCFAQ from '../components/wcfaq'
-import WCHero from '../components/wchero-closedRegistration'
-import WCLogo from '../components/WCLogo'
+import WCHero from '../components/WCHero'
+// import WCLogo from '../components/WCLogo'
 import WCRegistration from '../components/wcregistration'
 import WCSpeaker from '../components/wcspeaker'
 import WCVerse from '../components/wcverse'
@@ -19,7 +19,7 @@ let Element = Scroll.Element
 const WCApp = () => (
   <div className='WCApp'>
     <WCHero />
-    <WCLogo />
+    {/* <WCLogo /> */}
     <WCVerse />
     <Element name='speaker'>
       <WCSpeaker />
