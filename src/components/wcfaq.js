@@ -31,8 +31,9 @@ const FAQ = [
   {
     question: 'How much does it cost?',
     answers: [
-      `Dorms / Cabins - $165 / person for the weekend.`,
-      'Motel (Heritage Lodge) - $200 / person for the weekend',
+      `Cabins - $155 / person for the weekend.`,
+      `Dorms - $195 / person for the weekend.`,
+      'Motel (Heritage Lodge) - $240 / person for the weekend',
       'Heritage Lodges are reserved for married couples and pastors first. Then allocated on first come, first serve basis',
       'The above pricing does NOT include transportation.',
       'Please contact your leader regarding any subsidies or additional costs for transportation.',

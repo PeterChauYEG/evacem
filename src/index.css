@@ -46,7 +46,7 @@ input {
 p {
   font-size: 1em;
   font-weight: 300;
-  margin: 16px 0 0 0;
+  margin: 8px 0 0 0;
 }
 
 textarea {
@@ -205,6 +205,7 @@ textarea {
 
 .input-button {
   border: none;
+  border-radius: 4px;
   background-color: #9F2529;
   color: #fff;
   font-size: 1em;
@@ -284,7 +285,7 @@ textarea {
   border-radius: 11px;
   display: flex;
   flex-direction: column;
-  margin: 48px 16px;
+  margin: 32px 16px;
   padding: 32px 16px;
   width: 75vw;
 }
@@ -422,7 +423,7 @@ textarea {
 
 .wc-registration-input {
   border-radius: 4px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .wc-registration-label p {
@@ -446,7 +447,7 @@ textarea {
 
 .wc-speaker-photo {
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 .wc-speaker-photo-container {
@@ -480,7 +481,7 @@ textarea {
   border-radius: 11px;
   display: flex;
   flex-direction: column;
-  margin: 48px 16px;
+  margin: 32px 16px;
   padding: 16px;
   width: 75vw;
 }
@@ -624,7 +625,7 @@ textarea {
   }
 
   .about {
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .about-container {
@@ -641,7 +642,7 @@ textarea {
   }
 
   .contact {
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .contact-content {
@@ -730,7 +731,7 @@ textarea {
   }
 
   .wc-faq-content {
-    margin: 64px 72px;
+    margin: 48px 72px;
     padding: 48px;
     width: 60vw;
   }
@@ -847,7 +848,7 @@ textarea {
   }
 
   .wc-verse {
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .wc-verse-body p {
@@ -858,8 +859,8 @@ textarea {
     border-radius: 14px;
     display: flex;
     justify-content: center;
-    height: 25vh;
-    margin: 64px 72px;
+    height: 20vh;
+    margin: 48px 72px;
     padding: 48px;
     width: 60vw;
   }
@@ -978,7 +979,7 @@ textarea {
   }
 
   .wc-faq-content {
-    padding: 48px;
+    padding: 32px;
     width: 60vw;
   }
 
@@ -1081,7 +1082,7 @@ textarea {
   }
 
   .wc-verse {
-    min-height: 800px;
+    min-height: 600px;
   }
 
   .wc-verse-body p {
@@ -1090,8 +1091,8 @@ textarea {
 
   .wc-verse-content {
     border-radius: 16px;
-    height: 30vh;
-    padding: 48px;
+    height: 20vh;
+    padding: 32px;
     width: 60vw;
   }
 }
@@ -1133,10 +1134,6 @@ textarea {
 
   .nav li {
     font-size: 1.25em;
-  }
-
-  .wc-faq-content {
-    padding: 48px;
   }
 
   .wc-hero {
@@ -1190,11 +1187,11 @@ textarea {
   }
 
   .wc-verse {
-    min-height: 900px;
+    min-height: 600px;
   }
 
   .wc-verse-content {
     border-radius: 18px;
-    padding: 48px;
+    padding: 32px;
   }
 }
