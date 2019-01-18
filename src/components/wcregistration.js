@@ -194,7 +194,7 @@ class WCRegistration extends Component {
             <a className='wc-registration-link'
               target='_blank'
               rel='noopener noreferrer'
-              href='http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf'>
+              href='https://res.cloudinary.com/diy9jjbzh/image/upload/v1547786902/pdf/WC2019_Waiver.pdf'>
               Link to Waiver
             </a>
 
