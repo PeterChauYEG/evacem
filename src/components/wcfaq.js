@@ -71,7 +71,7 @@ const FAQ = [
   },
   {
     question: 'Where can I download the waiver?',
-    answers: ['http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf']
+    answers: ['https://res.cloudinary.com/diy9jjbzh/image/upload/v1547786902/pdf/WC2019_Waiver.pdf']
   }
 ]
 
@@ -92,7 +92,7 @@ const renderAnswers = (answers) => answers.map((answer, i) => {
     )
   }
 
-  if (answer === 'http://res.cloudinary.com/diy9jjbzh/image/upload/v1513466264/pdf/WC2018_Waiver.pdf') {
+  if (answer === 'https://res.cloudinary.com/diy9jjbzh/image/upload/v1547786902/pdf/WC2019_Waiver.pdf') {
     return (
       <a className='wc-registration-link'
         href={answer}
