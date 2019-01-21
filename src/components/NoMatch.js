@@ -8,7 +8,7 @@ import '../index.css'
 
 const suggestions = [
   'wintercamp',
-  'wintercamp2018',
+  'wintercamp2019',
   'ilovewintercamp'
 ]
 

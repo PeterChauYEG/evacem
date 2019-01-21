@@ -6,7 +6,7 @@ import '../index.css'
 const WCVerse = () => (
   <div className='wc-verse'>
     <div className='wc-verse-content'>
-      {/* <h1 className='wc-hero-title'>Winter Camp 2018</h1> */}
+      {/* <h1 className='wc-hero-title'>Winter Camp 2019</h1> */}
       <div className='wc-verse-body'>
         <p>
           "'The most important one,' answered Jesus, 'is this: 'Hear, O Israel: The Lord our God, the Lord is one. Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength. The second is this: 'Love your neighbor as yourself.' There is no commandment greater than these."
