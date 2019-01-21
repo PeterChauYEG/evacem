@@ -189,7 +189,7 @@ class WCRegistration extends Component {
           <h1 className='wc-faq-title'>Registration</h1>
           <div className='wc-faq-body'>
             <p>
-              Please fill out the registration form below to register for winter camp 2019. Provided below is a link for you to print out a waiver form. Please have this filled out and handed to your church leader(s) before winter camp 2018.
+              Please fill out the registration form below to register for winter camp 2019. Provided below is a link for you to print out a waiver form. Please have this filled out and handed to your church leader(s) before winter camp 2019.
             </p>
             <a className='wc-registration-link'
               target='_blank'
