@@ -8,7 +8,7 @@ import '../index.css'
 // Components
 import Footer from '../components/footer'
 import WCFAQ from '../components/wcfaq'
-import WCHero from '../components/wchero-closedRegistration'
+import WCHero from './WCHeroClosedRegistration'
 import WCLogo from '../components/WCLogo'
 import WCSpeaker from '../components/wcspeaker'
 import WCVerse from '../components/wcverse'

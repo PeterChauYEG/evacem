@@ -33,7 +33,7 @@ const WCHero = () => (
     </ul>
     <div className='wc-hero-content'>
       <h1 className='wc-hero-title'>Winter Camp 2019</h1>
-      <h1 className='wc-hero-subtitle'>Love Like No Other</h1>
+      <h1 className='wc-hero-subtitle'>Greater Than</h1>
       <div className='wc-hero-sub-closedRegistration'>
         <p>Registration Closed</p>
       </div>
